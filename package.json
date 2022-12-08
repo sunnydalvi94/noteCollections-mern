@@ -4,13 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": " concurrently \"npm start\" \"npm run client\""
   },
   "author": "Sunny Dalvi",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongoose": "^6.8.0",
     "nodemon": "^2.0.20"
   }
 }

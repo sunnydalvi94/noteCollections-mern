@@ -1,0 +1,15 @@
+.noteContainer{
+display: flex;
+justify-content:space-between;    
+}
+.accordion-button::after {
+  
+    width: 0px!important;
+  }
+  .accordion-button {
+ display: block!important;
+
+  }
+  .accordion-button:not(.collapsed) {
+    background-color:#073642!important;
+  }

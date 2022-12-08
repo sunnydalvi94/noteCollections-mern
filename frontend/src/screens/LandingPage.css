@@ -1,0 +1,41 @@
+.main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;  */
+
+  /* background: url("../../public/images/bg3.jpg"); */
+
+  background-repeat: no-repeat;
+  background-size: 200vh 150vh;
+  padding: 10vh;
+  /* margin: 10vw; */
+}
+.cardBg {
+  background: url("../../public/images/bg1.jpg");
+  border: 2px solid rgb(207, 217, 224);
+  background-size: 100vh 70vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 7vmin !important;
+}
+.subtitle {
+  font-size: 3vmin;
+  /* padding-top: 10px; */
+  text-align: center;
+}
+.intro-text {
+  width: 100%;
+  text-align: center;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttonContainer  button{
+  font-size: 1.8vmin!important;
+}
