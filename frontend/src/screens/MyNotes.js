@@ -12,6 +12,7 @@ function MyNotes() {
   const navigate = useNavigate();
 
   const [notes, setNotes] = useState([]);
+  
   const fetchNotes = async () => {
     const { data } = await axios.get("/api/notes");
     setNotes(data);

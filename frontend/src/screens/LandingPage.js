@@ -17,18 +17,24 @@ function LandingPage() {
               <div className="subtitle">One safe place for all your notes</div>
 
               <div className="buttonContainer pt-5 text-center">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    onClick={() => {
-                      navigate1("/MyNotes");
-                    }}
-                  >
-                    <b> LOGIN</b>
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    <b>SIGNUP</b>
-                  </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onClick={() => {
+                    navigate1("/login");
+                  }}
+                >
+                  <b> LOGIN</b>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onClick={() => {
+                    navigate1("/register");
+                  }}
+                >
+                  <b>SIGNUP</b>
+                </button>
               </div>
             </Card.Body>
           </Card>

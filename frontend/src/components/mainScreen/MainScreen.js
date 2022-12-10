@@ -1,29 +1,27 @@
-import React from 'react'
-import { Container,Row } from 'react-bootstrap';
-import "./MainScreen.css"
+import React from "react";
+import { Container, Row } from "react-bootstrap";
+import "./MainScreen.css";
 
-function MainScreen({title,children}) {
+function MainScreen({ title, children }) {
   return (
     <>
-     <div className='mainback'>
-
+      <div className="mainback">
         <Container>
-            <Row>
-                <div className='page'>
-                    {title && (
-                        < >
-                        <h1>{title}</h1>
-                        <hr /> 
-                        </>
-                    )}
-                    {children}
-                </div>
-            </Row>
+          <Row>
+            <div className="page">
+              {title && (
+                <>
+                  <h1>{title}</h1>
+                  <hr />
+                </>
+              )}
+              {children}
+            </div>
+          </Row>
         </Container>
-     </div>
-    
+      </div>
     </>
-  )
+  );
 }
 
-export default MainScreen
+export default MainScreen;
